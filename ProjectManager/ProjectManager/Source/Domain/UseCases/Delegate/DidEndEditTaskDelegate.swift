@@ -17,6 +17,6 @@ protocol DidEndDeletingDelegate: AnyObject {
     func didEndDeleting(task: Task)
 }
 
-protocol DidEndEditTaskDelegate: DidEndCreatingTaskDelegate,
-                         DidEndUpdatingDelegate,
-                         DidEndDeletingDelegate { }
+protocol DidEndEditingTaskDelegate: DidEndCreatingTaskDelegate,
+                                    DidEndUpdatingDelegate,
+                                    DidEndDeletingDelegate { }
