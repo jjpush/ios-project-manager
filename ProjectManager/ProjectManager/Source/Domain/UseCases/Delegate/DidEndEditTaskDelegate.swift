@@ -5,7 +5,7 @@
 //  Created by ayaan, jpush on 2023/01/17.
 //
 
-protocol DidEndCreateTaskDelegate: AnyObject {
+protocol DidEndCreatingTaskDelegate: AnyObject {
     func didEndCreating(task: Task)
 }
 
@@ -17,6 +17,6 @@ protocol DidEndDeletingDelegate: AnyObject {
     func didEndDeleting(task: Task)
 }
 
-protocol DidEndEditTask: DidEndEditTaskDelegate,
+protocol DidEndEditTask: DidEndCreatingTaskDelegate,
                          DidEndUpdatingDelegate,
                          DidEndDeletingDelegate { }
